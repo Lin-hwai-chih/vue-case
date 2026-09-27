@@ -15,10 +15,10 @@ onMounted(async function () {
 </script>
 
 <template>
-  <div class="headline">產品資料列表</div>
+  <!-- <div class="headline">產品資料列表</div> -->
   <div v-if="products === null">資料載入中</div>
   <!-- <div v-else>資料已載入</div> -->
-  <List v-else :products="products"></List>
+  <ProductList v-else :products="products"></ProductList>
 </template>
  
 <style scoped>
